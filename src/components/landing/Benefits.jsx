@@ -64,7 +64,7 @@ const Benefits = () => {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="group relative p-8 lg:p-10 rounded-3xl bg-white/80 backdrop-blur-sm border-2 border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-500 overflow-hidden"
+                            className="group relative p-8 lg:p-10 rounded-3xl bg-white/80 backdrop-blur-sm border-2 border-gray-100 hover:border-transparent shadow-[8px_8px_24px_rgba(0,0,0,0.08)] hover:shadow-2xl transition-all duration-500 overflow-hidden"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
                             {/* Gradient Background on Hover */}

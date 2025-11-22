@@ -47,10 +47,13 @@ const Hero = () => {
                             Começar Agora
                             <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <button className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2">
+                        <Link
+                            to="/app/inventory"
+                            className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2"
+                        >
                             <PlayCircle size={20} />
                             Conhecer a Solução
-                        </button>
+                        </Link>
                     </motion.div>
                 </div>
             </div>

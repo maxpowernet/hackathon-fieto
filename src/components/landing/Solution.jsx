@@ -12,7 +12,7 @@ const Solution = () => {
         },
         {
             icon: <Recycle size={56} className="text-teal-500" />,
-            title: "Upcycling e Novos Materiais",
+            title: "Reciclagem e Novos Materiais",
             description: "Transformação dos resíduos em Ecocimento, areia reciclada, tijolos ecológicos e outros materiais regionais.",
             gradient: "from-teal-500 to-blue-500",
             bgGradient: "from-teal-50 to-blue-50"
@@ -50,7 +50,7 @@ const Solution = () => {
                     {solutions.map((item, index) => (
                         <div
                             key={index}
-                            className="group relative p-8 lg:p-10 rounded-3xl bg-white border-2 border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-500 overflow-hidden"
+                            className="group relative p-8 lg:p-10 rounded-3xl bg-white border-2 border-gray-100 hover:border-transparent shadow-[8px_8px_24px_rgba(0,0,0,0.08)] hover:shadow-2xl transition-all duration-500 overflow-hidden"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
                             {/* Gradient Border on Hover */}
@@ -58,7 +58,7 @@ const Solution = () => {
                             <div className="absolute inset-[2px] bg-white rounded-3xl -z-10"></div>
 
                             {/* Icon Container */}
-                            <div className={`relative w-28 h-28 rounded-2xl bg-gradient-to-br ${item.bgGradient} flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>
+                            <div className={`relative w-28 h-28 mx-auto rounded-2xl bg-gradient-to-br ${item.bgGradient} flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>
                                 <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent rounded-2xl"></div>
                                 {item.icon}
                             </div>

@@ -5,7 +5,7 @@ const Upcycling = () => {
     return (
         <div>
             <div className="mb-8">
-                <h1 className="text-2xl font-bold text-gray-900">Indústria & Upcycling</h1>
+                <h1 className="text-2xl font-bold text-gray-900">Indústria & Reciclagem</h1>
                 <p className="text-gray-600">Transformação de resíduos em novos produtos.</p>
             </div>
 

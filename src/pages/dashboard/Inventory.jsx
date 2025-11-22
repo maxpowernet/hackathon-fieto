@@ -3,7 +3,7 @@ import { Plus, Search, Filter, MoreVertical, AlertCircle } from 'lucide-react';
 
 const Inventory = () => {
     const items = [
-        { id: 1, name: 'Resíduo de Concreto', type: 'Classe A', quantity: '5.2 t', status: 'Disponível', date: '22/11/2025', image: 'https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=200&auto=format&fit=crop' },
+        { id: 1, name: 'Resíduo de Concreto', type: 'Classe A', quantity: '5.2 t', status: 'Disponível', date: '22/11/2025', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD9oRCJ5ZRSjDhD59cL3zPibY8XpG9zGQxPA&s' },
         { id: 2, name: 'Restos de Madeira', type: 'Classe B', quantity: '1.8 t', status: 'Vendido', date: '21/11/2025', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=200&auto=format&fit=crop' },
         { id: 3, name: 'Tijolos Quebrados', type: 'Classe A', quantity: '3.5 t', status: 'Aguardando Coleta', date: '20/11/2025', image: 'https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?q=80&w=200&auto=format&fit=crop' },
         { id: 4, name: 'Sobras de Tubulação', type: 'Classe B', quantity: '0.5 t', status: 'Disponível', date: '19/11/2025', image: 'https://images.unsplash.com/photo-1605600659908-0ef719419d41?q=80&w=200&auto=format&fit=crop' },

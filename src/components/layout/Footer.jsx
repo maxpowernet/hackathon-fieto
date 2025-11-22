@@ -1,5 +1,5 @@
 import React from 'react';
-import { Recycle, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Recycle } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -14,11 +14,7 @@ const Footer = () => {
                         <p className="text-sm leading-relaxed mb-4">
                             Transformando resíduos em oportunidades para um futuro mais sustentável.
                         </p>
-                        <div className="flex gap-4">
-                            <a href="#" className="hover:text-eco-green-500 transition-colors"><Instagram size={20} /></a>
-                            <a href="#" className="hover:text-eco-green-500 transition-colors"><Linkedin size={20} /></a>
-                            <a href="#" className="hover:text-eco-green-500 transition-colors"><Facebook size={20} /></a>
-                        </div>
+
                     </div>
 
                     <div>

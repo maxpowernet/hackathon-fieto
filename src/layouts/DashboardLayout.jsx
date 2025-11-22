@@ -11,7 +11,8 @@ import {
     LogOut,
     Menu,
     Bell,
-    User
+    User,
+    Recycle
 } from 'lucide-react';
 
 const DashboardLayout = () => {
@@ -23,7 +24,7 @@ const DashboardLayout = () => {
         { name: 'Inventário', icon: <ClipboardList size={20} />, path: '/app/inventory' },
         { name: 'Marketplace', icon: <ShoppingBag size={20} />, path: '/app/marketplace' },
         { name: 'Logística', icon: <Truck size={20} />, path: '/app/logistics' },
-        { name: 'Upcycling', icon: <Factory size={20} />, path: '/app/upcycling' },
+        { name: 'Reciclagem', icon: <Factory size={20} />, path: '/app/upcycling' },
         { name: 'Relatórios ESG', icon: <FileBarChart size={20} />, path: '/app/reports' },
         { name: 'Configurações', icon: <Settings size={20} />, path: '/app/settings' },
     ];
@@ -37,9 +38,20 @@ const DashboardLayout = () => {
             >
                 <div className="p-4 border-b border-gray-200 flex items-center justify-between">
                     {isSidebarOpen ? (
-                        <span className="text-xl font-bold text-gray-900">TEC-CICLO</span>
+                        <Link to="/" className="flex items-center gap-2 group">
+                            <div className="bg-eco-green-500 p-1.5 rounded-lg text-white group-hover:bg-eco-green-600 transition-colors">
+                                <Recycle size={20} />
+                            </div>
+                            <span className="text-lg font-bold text-gray-900">
+                                TEC-CICLO <span className="text-eco-green-500">360°</span>
+                            </span>
+                        </Link>
                     ) : (
-                        <span className="text-xl font-bold text-eco-green-500 mx-auto">TC</span>
+                        <Link to="/" className="flex justify-center w-full">
+                            <div className="bg-eco-green-500 p-1.5 rounded-lg text-white hover:bg-eco-green-600 transition-colors">
+                                <Recycle size={20} />
+                            </div>
+                        </Link>
                     )}
                     <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="p-1 hover:bg-gray-100 rounded-lg">
                         <Menu size={20} className="text-gray-500" />
@@ -53,8 +65,8 @@ const DashboardLayout = () => {
                                 <Link
                                     to={item.path}
                                     className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${location.pathname === item.path
-                                            ? 'bg-eco-green-50 text-eco-green-600'
-                                            : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                                        ? 'bg-eco-green-50 text-eco-green-600'
+                                        : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                                         }`}
                                 >
                                     {item.icon}
