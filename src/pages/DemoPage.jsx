@@ -112,7 +112,7 @@ const DemoPage = () => {
                             {/* Item Recém Adicionado */}
                             <div className="bg-white border-l-4 border-eco-green-500 rounded-xl p-4 shadow-sm flex items-center gap-4 ring-2 ring-eco-green-100">
                                 <div className="w-16 h-16 rounded-lg bg-gray-100 flex-shrink-0 overflow-hidden">
-                                    <img src="https://images.unsplash.com/photo-1590059390047-58e601af72d4?q=80&w=200" alt="Concreto" className="w-full h-full object-cover" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPrt3zE2Bfe6dUXtqZoY7Epczz3RgBzhCVVw&s" alt="Concreto" className="w-full h-full object-cover" />
                                 </div>
                                 <div className="flex-1">
                                     <div className="flex justify-between items-start">
@@ -129,8 +129,8 @@ const DemoPage = () => {
 
                             {/* Outros Itens */}
                             <div className="bg-white border border-gray-100 rounded-xl p-4 flex items-center gap-4 opacity-60">
-                                <div className="w-16 h-16 rounded-lg bg-gray-100 flex-shrink-0 flex items-center justify-center text-gray-400">
-                                    <Package size={24} />
+                                <div className="w-16 h-16 rounded-lg bg-gray-100 flex-shrink-0 overflow-hidden">
+                                    <img src="https://bosiomadeiras.com.br/wp-content/uploads/2023/07/83.png" alt="Madeira Mista" className="w-full h-full object-cover" />
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="font-bold text-gray-900">Madeira Mista</h3>
@@ -239,9 +239,8 @@ const DemoPage = () => {
 
                             {/* Mapa Simulado */}
                             <div className="bg-gray-800 rounded-xl h-48 mb-6 relative overflow-hidden flex items-center justify-center">
-                                <div className="absolute inset-0 opacity-30">
-                                    {/* Grid Pattern representing map */}
-                                    <div className="w-full h-full" style={{ backgroundImage: 'radial-gradient(#4ade80 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+                                <div className="absolute inset-0 opacity-50">
+                                    <img src="https://img.odcdn.com.br/wp-content/uploads/2017/08/20170811174432.jpg" alt="Mapa" className="w-full h-full object-cover" />
                                 </div>
 
                                 {/* Route Line */}
@@ -316,9 +315,9 @@ const DemoPage = () => {
                             <Link to="/" className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-4 rounded-xl font-bold text-center transition-colors">
                                 Voltar ao Início
                             </Link>
-                            <button onClick={() => setCurrentStep(0)} className="flex-1 bg-eco-green-500 hover:bg-eco-green-600 text-white py-4 rounded-xl font-bold transition-colors">
-                                Novo Ciclo
-                            </button>
+                            <Link to="/app/inventory" className="flex-1 bg-eco-green-500 hover:bg-eco-green-600 text-white py-4 rounded-xl font-bold text-center transition-colors flex items-center justify-center">
+                                Marketplace
+                            </Link>
                         </div>
                     </div>
                 );
@@ -356,8 +355,8 @@ const DemoPage = () => {
                             <div
                                 key={step.id}
                                 className={`relative z-10 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${index <= currentStep
-                                        ? 'bg-eco-green-500 text-white scale-110 shadow-lg shadow-eco-green-500/30'
-                                        : 'bg-gray-200 text-gray-400'
+                                    ? 'bg-eco-green-500 text-white scale-110 shadow-lg shadow-eco-green-500/30'
+                                    : 'bg-gray-200 text-gray-400'
                                     }`}
                             >
                                 {index < currentStep ? <CheckCircle size={14} /> : index + 1}
