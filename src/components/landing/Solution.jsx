@@ -64,7 +64,7 @@ const Solution = () => {
                             </div>
 
                             {/* Title with Gradient */}
-                            <h3 className={`text-2xl lg:text-3xl font-extrabold mb-5 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent leading-tight`}>
+                            <h3 className={`text-2xl lg:text-3xl font-extrabold mb-5 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent leading-tight text-center`}>
                                 {item.title}
                             </h3>
 

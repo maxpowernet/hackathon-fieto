@@ -224,44 +224,70 @@ const DemoPage = () => {
             case 3: // Logística
                 return (
                     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        <div className="bg-gray-900 rounded-2xl p-6 text-white relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-eco-green-500 rounded-full blur-3xl opacity-20"></div>
+                        <div className="text-center mb-6">
+                            <h2 className="text-2xl font-bold text-gray-900">Motoristas Disponíveis</h2>
+                            <p className="text-gray-600">Selecione um motorista para solicitar o frete</p>
+                        </div>
 
-                            <div className="flex items-center justify-between mb-6 relative z-10">
-                                <div>
-                                    <h2 className="text-xl font-bold">Acompanhamento</h2>
-                                    <p className="text-gray-400 text-sm">Pedido #8921</p>
-                                </div>
-                                <div className="bg-eco-green-500 px-3 py-1 rounded-full text-xs font-bold">
-                                    EM TRÂNSITO
-                                </div>
-                            </div>
-
-                            {/* Mapa Simulado */}
-                            <div className="bg-gray-800 rounded-xl h-48 mb-6 relative overflow-hidden flex items-center justify-center">
-                                <div className="absolute inset-0 opacity-50">
-                                    <img src="https://img.odcdn.com.br/wp-content/uploads/2017/08/20170811174432.jpg" alt="Mapa" className="w-full h-full object-cover" />
-                                </div>
-
-                                {/* Route Line */}
-                                <div className="absolute top-1/2 left-10 right-10 h-1 bg-gray-600 rounded-full">
-                                    <div className="h-full w-2/3 bg-eco-green-500 rounded-full relative">
-                                        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg border-2 border-eco-green-500 animate-pulse"></div>
+                        <div className="space-y-4">
+                            {/* Motorista 1 - Destaque */}
+                            <div className="bg-white border-2 border-eco-green-500 rounded-xl p-4 shadow-md hover:shadow-lg transition-all">
+                                <div className="flex items-start gap-3 mb-3">
+                                    <div className="w-12 h-12 rounded-full bg-eco-green-100 flex items-center justify-center flex-shrink-0">
+                                        <Truck className="text-eco-green-600" size={20} />
+                                    </div>
+                                    <div className="flex-1">
+                                        <div className="flex items-center justify-between mb-1">
+                                            <h3 className="font-bold text-gray-900 text-sm">Carlos Silva</h3>
+                                            <span className="bg-eco-green-100 text-eco-green-700 px-2 py-0.5 rounded text-xs font-bold">RECOMENDADO</span>
+                                        </div>
+                                        <div className="flex items-center gap-1 text-xs text-yellow-500 mb-1">
+                                            ★★★★★ <span className="text-gray-400">(4.9)</span>
+                                        </div>
+                                        <p className="flex items-center gap-2 text-sm text-gray-600">
+                                            <Truck size={14} className="text-gray-400" />
+                                            <span className="font-medium">Caminhão Caçamba 8m³</span>
+                                        </p>
                                     </div>
                                 </div>
-
-                                <div className="absolute bottom-4 left-4 bg-gray-900/90 backdrop-blur px-3 py-2 rounded-lg text-xs">
-                                    <span className="text-gray-400">Previsão:</span> <span className="font-bold text-white">14:30</span>
+                                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                                    <div>
+                                        <p className="text-xs text-gray-500">Valor do Frete</p>
+                                        <p className="text-xl font-bold text-eco-green-600">R$ 180,00</p>
+                                    </div>
+                                    <div className="text-right">
+                                        <p className="text-xs text-gray-500">Contato</p>
+                                        <p className="text-sm font-medium text-gray-900">(63) 99123-4567</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
-                                    <Truck className="text-eco-green-400" />
+                            {/* Motorista 2 */}
+                            <div className="bg-white border border-gray-200 rounded-xl p-4 hover:border-gray-300 hover:shadow-md transition-all">
+                                <div className="flex items-start gap-3 mb-3">
+                                    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <Truck className="text-blue-600" size={20} />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="font-bold text-gray-900 mb-1 text-sm">João Pereira</h3>
+                                        <div className="flex items-center gap-1 text-xs text-yellow-500 mb-1">
+                                            ★★★★☆ <span className="text-gray-400">(4.6)</span>
+                                        </div>
+                                        <p className="flex items-center gap-2 text-sm text-gray-600">
+                                            <Truck size={14} className="text-gray-400" />
+                                            <span className="font-medium">Carreta Basculante 12m³</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 className="font-bold">Motorista Carlos</h3>
-                                    <p className="text-sm text-gray-400">Placa: QKW-1234 • Caminhão Caçamba</p>
+                                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                                    <div>
+                                        <p className="text-xs text-gray-500">Valor do Frete</p>
+                                        <p className="text-xl font-bold text-gray-900">R$ 220,00</p>
+                                    </div>
+                                    <div className="text-right">
+                                        <p className="text-xs text-gray-500">Contato</p>
+                                        <p className="text-sm font-medium text-gray-900">(63) 99234-5678</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -35,7 +35,7 @@ const Header = () => {
                         <Recycle size={24} />
                     </div>
                     <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                        TEC-CICLO <span className="text-eco-green-500">360°</span>
+                        CICLO <span className="text-eco-green-500">360°</span>
                     </span>
                 </Link>
 
