@@ -27,7 +27,7 @@ const DemoPage = () => {
                 setIsProcessing(false);
                 setCurrentStep(prev => prev + 1);
                 setShowSuccess(false);
-            }, 1500);
+            }, 750);
         }
     };
 
@@ -37,7 +37,7 @@ const DemoPage = () => {
             setCapturedImage("https://images.unsplash.com/photo-1590059390047-58e601af72d4?q=80&w=1000&auto=format&fit=crop");
             setIsProcessing(false);
             setShowSuccess(true);
-        }, 2000);
+        }, 1000);
     };
 
     // Render Step Content
