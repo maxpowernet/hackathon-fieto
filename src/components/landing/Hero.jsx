@@ -30,7 +30,7 @@ const Hero = () => {
                             Transformando o resíduo da construção em <span className="text-transparent bg-clip-text bg-gradient-to-r from-eco-green-400 to-teal-400">riqueza para o Tocantins</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Gestão integrada que conecta obras, indústrias, cooperativas e transportadores, transformando resíduos em novos materiais sustentáveis.
+                            Ecossistema integrado que conecta obras, indústrias, cooperativas e transportadores, transformando resíduos em novos materiais sustentáveis.
                         </p>
                     </motion.div>
 
@@ -59,7 +59,7 @@ const Hero = () => {
             </div>
 
             {/* Abstract Shapes */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent z-10"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-gray-50 to-transparent z-10"></div>
         </section>
     );
 };
