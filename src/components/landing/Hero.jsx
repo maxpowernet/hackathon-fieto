@@ -27,10 +27,10 @@ const Hero = () => {
                             Inovação em Economia Circular
                         </span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-                            Transformamos o resíduo da construção em <span className="text-transparent bg-clip-text bg-gradient-to-r from-eco-green-400 to-teal-400">riqueza para o Tocantins</span>
+                            Transformando o resíduo da construção em <span className="text-transparent bg-clip-text bg-gradient-to-r from-eco-green-400 to-teal-400">riqueza para o Tocantins</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                            Plataforma integrada que conecta obras, indústrias, cooperativas e transportadores, transformando resíduos em novos materiais sustentáveis.
+                        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                            Gestão integrada que conecta obras, indústrias, cooperativas e transportadores, transformando resíduos em novos materiais sustentáveis.
                         </p>
                     </motion.div>
 

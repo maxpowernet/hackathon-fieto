@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex items-center gap-2 mb-4 text-white">
                             <Recycle className="text-eco-green-500" size={24} />
-                            <span className="text-xl font-bold">CICLO 360°</span>
+                            <span className="text-xl font-bold">ECO CICLO 360°</span>
                         </div>
                         <p className="text-sm leading-relaxed mb-4">
                             Transformando resíduos em oportunidades para um futuro mais sustentável.
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
 
                 <div className="pt-8 border-t border-gray-800 text-center text-xs">
-                    <p>&copy; 2025 CICLO 360°. Todos os direitos reservados.</p>
+                    <p>&copy; 2025 ECO CICLO 360°. Todos os direitos reservados.</p>
                 </div>
             </div>
         </footer>

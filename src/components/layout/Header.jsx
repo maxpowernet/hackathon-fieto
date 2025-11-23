@@ -35,7 +35,7 @@ const Header = () => {
                         <Recycle size={24} />
                     </div>
                     <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                        CICLO <span className="text-eco-green-500">360°</span>
+                        ECO CICLO <span className="text-eco-green-500">360°</span>
                     </span>
                 </Link>
 
@@ -55,7 +55,7 @@ const Header = () => {
 
                 <div className="hidden md:flex items-center gap-4">
                     <Link
-                        to="/demo"
+                        to="/app"
                         className="bg-eco-green-500 hover:bg-eco-green-600 text-white px-5 py-2 rounded-full text-sm font-medium transition-all shadow-lg hover:shadow-eco-green-500/30"
                     >
                         Acessar Plataforma
@@ -90,7 +90,7 @@ const Header = () => {
                     ))}
                     <div className="flex flex-col gap-3 mt-2">
                         <Link
-                            to="/demo"
+                            to="/app"
                             className="text-center bg-eco-green-500 text-white font-medium py-2 rounded-lg hover:bg-eco-green-600"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >

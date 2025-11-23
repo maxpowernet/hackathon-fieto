@@ -83,7 +83,7 @@ const DashboardLayout = () => {
                                 <Recycle size={20} />
                             </div>
                             <span className={`text-lg font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
-                                CICLO <span className="text-eco-green-500">360°</span>
+                                ECO CICLO <span className="text-eco-green-500">360°</span>
                             </span>
                         </Link>
                     ) : (
