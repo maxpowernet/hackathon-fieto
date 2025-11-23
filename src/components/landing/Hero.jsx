@@ -26,10 +26,10 @@ const Hero = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-eco-green-500/20 text-eco-green-400 text-sm font-semibold mb-6 border border-eco-green-500/30">
                             Inovação em Economia Circular
                         </span>
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
                             Transformando o resíduo da construção em <span className="text-transparent bg-clip-text bg-gradient-to-r from-eco-green-400 to-teal-400">riqueza para o Tocantins</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
                             Gestão integrada que conecta obras, indústrias, cooperativas e transportadores, transformando resíduos em novos materiais sustentáveis.
                         </p>
                     </motion.div>
